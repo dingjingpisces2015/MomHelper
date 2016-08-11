@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C626B7921D5C4FF1007140C9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C626B7911D5C4FF1007140C9 /* MapViewController.m */; };
+		C626B7951D5C5484007140C9 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C626B7941D5C5484007140C9 /* MapAnnotation.m */; };
+		C626B7971D5C6036007140C9 /* annomation.png in Resources */ = {isa = PBXBuildFile; fileRef = C626B7961D5C6036007140C9 /* annomation.png */; };
+		C626B7991D5C6169007140C9 /* newImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C626B7981D5C6169007140C9 /* newImage.jpeg */; };
 		C666CF791D5AD7EA00553F7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C666CF781D5AD7EA00553F7D /* main.m */; };
 		C666CF7C1D5AD7ED00553F7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C666CF7B1D5AD7ED00553F7D /* AppDelegate.m */; };
 		C666CF7F1D5AD7ED00553F7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C666CF7E1D5AD7ED00553F7D /* ViewController.m */; };
@@ -35,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C626B7901D5C4FF0007140C9 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		C626B7911D5C4FF1007140C9 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		C626B7931D5C5484007140C9 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		C626B7941D5C5484007140C9 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		C626B7961D5C6036007140C9 /* annomation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = annomation.png; sourceTree = "<group>"; };
+		C626B7981D5C6169007140C9 /* newImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = newImage.jpeg; sourceTree = "<group>"; };
 		C666CF741D5AD7EA00553F7D /* MapAndLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapAndLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C666CF781D5AD7EA00553F7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C666CF7A1D5AD7ED00553F7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,9 +111,15 @@
 		C666CF761D5AD7EA00553F7D /* MapAndLocation */ = {
 			isa = PBXGroup;
 			children = (
+				C626B7961D5C6036007140C9 /* annomation.png */,
 				C666CF7A1D5AD7ED00553F7D /* AppDelegate.h */,
+				C626B7981D5C6169007140C9 /* newImage.jpeg */,
 				C666CF7B1D5AD7ED00553F7D /* AppDelegate.m */,
+				C626B7931D5C5484007140C9 /* MapAnnotation.h */,
+				C626B7941D5C5484007140C9 /* MapAnnotation.m */,
 				C666CF7D1D5AD7ED00553F7D /* ViewController.h */,
+				C626B7901D5C4FF0007140C9 /* MapViewController.h */,
+				C626B7911D5C4FF1007140C9 /* MapViewController.m */,
 				C666CF7E1D5AD7ED00553F7D /* ViewController.m */,
 				C666CF801D5AD7ED00553F7D /* Main.storyboard */,
 				C666CF831D5AD7ED00553F7D /* Assets.xcassets */,
@@ -207,6 +223,11 @@
 				TargetAttributes = {
 					C666CF731D5AD7EA00553F7D = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					C666CF8C1D5AD7EE00553F7D = {
 						CreatedOnToolsVersion = 7.3;
@@ -243,7 +264,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C626B7991D5C6169007140C9 /* newImage.jpeg in Resources */,
 				C666CF871D5AD7EE00553F7D /* LaunchScreen.storyboard in Resources */,
+				C626B7971D5C6036007140C9 /* annomation.png in Resources */,
 				C666CF841D5AD7EE00553F7D /* Assets.xcassets in Resources */,
 				C666CF821D5AD7ED00553F7D /* Main.storyboard in Resources */,
 			);
@@ -273,6 +296,8 @@
 				C666CF7F1D5AD7ED00553F7D /* ViewController.m in Sources */,
 				C666CF7C1D5AD7ED00553F7D /* AppDelegate.m in Sources */,
 				C666CF791D5AD7EA00553F7D /* main.m in Sources */,
+				C626B7921D5C4FF1007140C9 /* MapViewController.m in Sources */,
+				C626B7951D5C5484007140C9 /* MapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +523,7 @@
 				C666CFA31D5AD7EE00553F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C666CFA41D5AD7EE00553F7D /* Build configuration list for PBXNativeTarget "MapAndLocationTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +532,7 @@
 				C666CFA61D5AD7EE00553F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C666CFA71D5AD7EE00553F7D /* Build configuration list for PBXNativeTarget "MapAndLocationUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +541,7 @@
 				C666CFA91D5AD7EE00553F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
